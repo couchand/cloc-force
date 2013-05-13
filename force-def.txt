@@ -1,0 +1,22 @@
+Apex Class
+    filter remove_matches ^\s*//
+    filter call_regexp_common C
+    filter remove_inline //.*$
+    extension cls
+    3rd_gen_scale 1.4
+Apex Trigger
+    filter remove_matches ^\s*//
+    filter call_regexp_common C
+    filter remove_inline //.*$
+    extension trigger
+    3rd_gen_scale 1.4
+Visualforce Component
+    filter remove_html_comments
+    filter call_regexp_common HTML
+    extension component
+    3rd_gen_scale 1.90
+Visualforce Page
+    filter remove_html_comments
+    filter call_regexp_common HTML
+    extension page
+    3rd_gen_scale 1.90
